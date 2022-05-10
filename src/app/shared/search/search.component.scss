@@ -1,0 +1,21 @@
+@import "src/themes/rem-calc.scss";
+:host{
+  form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--pokedex-app-dark);
+    padding: rem-calc(15) rem-calc(20);
+    border-radius: rem-calc(10);
+    input{
+      width: 95%;
+      background: none;
+      border: none;
+      color: var(--pokedex-app-light);
+      font-size: rem-calc(18);
+      &::placeholder{
+        color: var(--pokedex-app-light);
+      }
+    }
+  }
+}
