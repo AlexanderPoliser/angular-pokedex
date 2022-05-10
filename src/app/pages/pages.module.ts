@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
 
-import { CommonModule } from '@angular/common';
+//import Modules region
+import { CommonModule } from '@angular/common'
 
-import { HomeComponent } from './home/home.component';
+import {SharedModule} from "../shared/shared.module";
 
 import {RoutingModule} from "./pages-routing.module";
+//endregion
+
+//import Components region
+import { HomeComponent } from './home/home.component';
+
 import { DetailsComponent } from './details/details.component';
 
+//endregion
 
 @NgModule({
   declarations: [
@@ -15,7 +22,8 @@ import { DetailsComponent } from './details/details.component';
   ],
   imports: [
     CommonModule,
-    RoutingModule
+    RoutingModule,
+    SharedModule
   ]
 })
 export class PagesModule { }

@@ -1,0 +1,17 @@
+@import '/src/themes/rem-calc';
+
+:host{
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem-calc(40) 0;
+  }
+  span{
+    color: var(--pokedex-app-light);
+    font-size: rem-calc(32);
+    font-weight: bold;
+    padding-left: rem-calc(10);
+  }
+}
+
